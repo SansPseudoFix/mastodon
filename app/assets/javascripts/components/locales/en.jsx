@@ -63,6 +63,15 @@ const en = {
   "notifications.column_settings.favourite": "Favourites:",
   "notifications.column_settings.mention": "Mentions:",
   "notifications.column_settings.reblog": "Boosts:",
+  "reports.reports": "Reports",
+  "reports.status": "Status",
+  "reports.unresolved": "Unresolved",
+  "reports.resolved": "Resolved",
+  "reports.id": "ID",
+  "reports.target": "Target",
+  "reports.reported_by": "Reported by",
+  "reports.comment": "Comment,"
+  "reports.view": "View",
 };
 
 export default en;
