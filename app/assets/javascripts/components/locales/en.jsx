@@ -70,8 +70,13 @@ const en = {
   "reports.id": "ID",
   "reports.target": "Target",
   "reports.reported_by": "Reported by",
-  "reports.comment": "Comment,"
+  "reports.comment": "Comment",
   "reports.view": "View",
+  "reports.report": "Report",
+  "reports.reported_account": "Reported account",
+  "reports.silence_account": "Silence account",
+  "reports.suspend_account": "Suspend account",
+  "reports.mark_as_resolved": "Mark as resolved,"
 };
 
 export default en;

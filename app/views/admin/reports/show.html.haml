@@ -1,16 +1,16 @@
 - content_for :page_title do
-  = "Report ##{@report.id}"
+  = "t('reports.report') ##{@report.id}"
 
 .report-accounts
   .report-accounts__item
-    %strong Reported account:
+    %strong t('reports.reported_account'):
     = render partial: 'authorize_follow/card', locals: { account: @report.target_account }
   .report-accounts__item
-    %strong Reported by:
+    %strong t('reports.reported_by'):
     = render partial: 'authorize_follow/card', locals: { account: @report.account }
 
 %p
-  %strong Comment:
+  %strong t('reports.comment'):
   - if @report.comment.blank?
     None
   - else
@@ -32,10 +32,10 @@
 
   %div{ style: 'overflow: hidden' }
     %div{ style: 'float: right' }
-      = link_to 'Silence account', silence_admin_report_path(@report), method: :post, class: 'button'
-      = link_to 'Suspend account', suspend_admin_report_path(@report), method: :post, class: 'button'
+      = link_to t('reports.silence_account'), silence_admin_report_path(@report), method: :post, class: 'button'
+      = link_to t('reports.suspend_account'), suspend_admin_report_path(@report), method: :post, class: 'button'
     %div{ style: 'float: left' }
-      = link_to 'Mark as resolved', resolve_admin_report_path(@report), method: :post, class: 'button'
+      = link_to t('reports.mark_as_resolved'), resolve_admin_report_path(@report), method: :post, class: 'button'
 - elsif !@report.action_taken_by_account.nil?
   %hr/
 
